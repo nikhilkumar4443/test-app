@@ -50,6 +50,5 @@
     "memory": "512",
     "runtimePlatform": {
         "operatingSystemFamily": "LINUX"
-    },
-    "tags": []
+    }
 }
