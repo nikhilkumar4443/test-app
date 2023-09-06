@@ -2,7 +2,7 @@
     "containerDefinitions": [
         {
             "name": "sample-fargate-app",
-            "image": "httpd:2.4",
+            "image": <IMAGE_ID>,
             "cpu": 0,
             "portMappings": [
                 {
