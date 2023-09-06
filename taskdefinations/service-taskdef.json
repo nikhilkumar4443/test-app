@@ -2,7 +2,7 @@
     "containerDefinitions": [
         {
             "name": "sample-fargate-app",
-            "image": <IMAGE_ID>,
+            "image": <IMAGE>,
             "cpu": 0,
             "portMappings": [
                 {
