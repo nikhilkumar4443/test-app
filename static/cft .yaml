@@ -1,0 +1,20 @@
+        - Name: Deploy
+          Actions:
+            - 
+              Name: CodeDeployStage
+              ActionTypeId:
+                Version: 1
+                Owner: AWS
+                Category: Deploy
+                Provider: CodeDeployToECS
+              Configuration:
+                ApplicationName: <Add Application Name>
+                DeploymentGroupName: <Add dg name>
+                TaskDefinitionTemplateArtifact: BuildOutPutArtifact
+                AppSpecTemplateArtifact: BuildOutPutArtifact
+                AppSpecTemplatePath: AppSpec.yaml
+                TaskDefinitionTemplatePath: taskdef.json
+                Image1ArtifactName: BuildOutPutArtifact
+                Image1ContainerName: IMAGE
+              InputArtifacts:
+                - Name: BuildOutPutArtifact
